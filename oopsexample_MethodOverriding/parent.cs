@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace oopsexample_MethodOverriding
+{
+    internal class parent
+    { //virtual method always in parent class
+        public virtual void sum()
+        {
+            int x = 10, y = 20, z;
+            z = x + y;
+            Console.WriteLine("the sum is " + z);
+        }
+        public void display()
+        {
+            Console.WriteLine("i am from display ");
+        }
+    }
+}
