@@ -12,19 +12,20 @@ namespace oopsexample_MethodOverriding
     //Same method name and same parameters we will use in parent and child class.
     //then only we can implement the overriding concept.
     //without inheritence we can't implement methodoverriding.
-    //Compiler always checks for override keyword method first.if it is availble it will call override method.
+    //when you run the program,Compiler always checks for override keyword method first in runtime .if it is availble it will call override method.
     //if there is no override keyword in child class it will call the parent class virtual method.
     internal class child: parent
     {
         //override method always in child class
         //To overirde the method is optional.(not a mandatory)
+        //If there is no overide method compiler will give next prefrece to virtual method.
 
-        //public override void sum()
-        //{
-        //    //base.sum();
-        //    int x = 100, y = 200, z = 300, res;//here 3 variables created and assigned data and decalring one int variable.
-        //    res = x + y + z;
-        //    Console.WriteLine("the sum is " + res);
-        //}
+        public override void sum()
+        {
+            //base.sum();
+            int x = 100, y = 200, z = 300, res;//here 3 variables created and assigned data and decalring one int variable.
+            res = x + y + z;
+            Console.WriteLine("the sum is " + res);
+        }
     }
 }

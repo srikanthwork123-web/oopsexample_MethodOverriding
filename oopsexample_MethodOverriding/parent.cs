@@ -14,7 +14,7 @@ namespace oopsexample_MethodOverriding
             z = x + y;
             Console.WriteLine("the sum is " + z);
         }
-        public void display()
+        public void display()//normal method we can't overirde with out virtual keyword
         {
             Console.WriteLine("i am from display ");
         }
